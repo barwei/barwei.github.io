@@ -1,2 +1,2 @@
-#履歷&關於我
+#履歷關於我
 introduce myself
