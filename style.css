@@ -1,0 +1,251 @@
+* {
+  font-family: "微軟正黑體", sans-serif;
+}
+body {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #324fad;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+/* 複寫區 */
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+h2::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 8px;
+  background-color: #324fad;
+  margin-left: 10px;
+}
+h4 {
+  margin: 0;
+  margin-top: 40px;
+  opacity: 0.8;
+  font-weight: 400;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+hr {
+  border: none;
+  border-bottom: solid 4px #b597bf;
+  width: 40%;
+  margin-left: 0;
+}
+
+.resume {
+  display: flex;
+  max-width: 2000px;
+  border: solid 8px #fff;
+  padding: 100px;
+  position: relative;
+}
+
+.left,
+.right {
+  padding: 50px;
+}
+.left {
+  flex: 5;
+  padding-right: 50px;
+  border-right: solid 1px #b597bf;
+}
+.right {
+  flex: 5;
+  padding-right: 80px;
+  padding-top: 100px;
+}
+.decoration {
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(135deg, #54405b, #dcaaed);
+  border-radius: 70px 0 0 70px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+.listExperience > li {
+  margin-bottom: 15px;
+}
+.listExperience > li:nth-child(1) ul {
+  border-color: #b597bf;
+}
+.listExperience > li:nth-child(2) ul {
+  border-color: #a87cb7;
+}
+.listExperience > li:nth-child(3) ul {
+  border-color: #9f75ad;
+}
+.listExperience > li:nth-child(4) ul {
+  border-color: #8f6c9b;
+}
+.listExperience > li:nth-child(5) ul {
+  border-color: #81608c;
+}
+.listExperience li ul {
+  padding-left: 15px;
+  margin-left: 15px;
+  border-left: solid 4px #fff;
+}
+
+/* list Skill */
+.listSkill {
+  display: flex;
+  flex-wrap: wrap;
+}
+.listSkill li {
+  width: 25%;
+  padding: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(181, 151, 191, 0.4);
+}
+.circle::after {
+  content: "";
+  display: block;
+  background-color: #324fad;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle:hover .p90,
+.circle:hover .p180,
+.circle:hover .p270,
+.circle:hover .p360 {
+  background-color: #e7d0ef;
+}
+
+.p90,
+.p180,
+.p270,
+.p360 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  background-color: #b597bf;
+  transition: 0.5s;
+}
+
+.p180 {
+  top: 50%;
+}
+.p270 {
+  left: 0;
+  top: 50%;
+}
+.p360 {
+  left: 0;
+  top: 0;
+}
+
+/* list porgram */
+
+.listProgram .bar {
+  width: 150px;
+  height: 8px;
+  border: solid 2px #b597bf;
+  border-radius: 5px;
+}
+.listProgram li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  transition: 0.5s;
+}
+.value {
+  height: 100%;
+  width: 60%;
+  background-color: #b597bf;
+  transition: 0.5s;
+}
+.listProgram li:hover .value {
+  background-color: #e7d0ef;
+}
+.listProgram li:hover {
+  text-shadow: 8px 5px 3px hsla(20, 0%, 60%, 0.5);
+  color: #ccc;
+}
+
+.value.p10 {
+  width: 10%;
+}
+.value.p60 {
+  width: 60%;
+}
+.value.p0 {
+  width: 0%;
+}
+.value.p15 {
+  width: 15%;
+}
+
+.value.p70 {
+  width: 70%;
+}
+.value.p20 {
+  width: 20%;
+}
+
+.btn {
+  border: solid 3px #b597bf;
+  padding: 5px 20px;
+  margin-right: 10px;
+  box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.fill {
+  background-color: #b597bf;
+}
+.fill:hover {
+  background-color: rgba(181, 151, 191, 0.4);
+  border-color: rgba(181, 151, 191, 0.8);
+  box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.4);
+}
+.fill:active {
+  background-color: #9ace85;
+  color: #000;
+}
+
+.git:hover {
+  background-color: rgba(104, 91, 109, 0.8);
+  border-color: rgba(181, 151, 191, 0.2);
+  box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.4);
+}
+.git:active {
+  background-color: #130f0b;
+  color: #fff;
+}
