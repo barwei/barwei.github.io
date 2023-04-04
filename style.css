@@ -117,59 +117,6 @@ hr {
   align-items: center;
   text-align: center;
 }
-
-.circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  background-color: rgba(181, 151, 191, 0.4);
-}
-.circle::after {
-  content: "";
-  display: block;
-  background-color: #324fad;
-  width: calc(100% - 20px);
-  height: calc(100% - 20px);
-  border-radius: 50%;
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.circle:hover .p90,
-.circle:hover .p180,
-.circle:hover .p270,
-.circle:hover .p360 {
-  background-color: #e7d0ef;
-}
-
-.p90,
-.p180,
-.p270,
-.p360 {
-  width: 50%;
-  height: 50%;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  background-color: #b597bf;
-  transition: 0.5s;
-}
-
-.p180 {
-  top: 50%;
-}
-.p270 {
-  left: 0;
-  top: 50%;
-}
-.p360 {
-  left: 0;
-  top: 0;
-}
-
 /* list porgram */
 
 .listProgram .bar {
